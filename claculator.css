@@ -27,15 +27,15 @@
     text-align: right;
     font-size: 30px;
     margin: 0px;
+    height: 10vh;
 }
 .input-key{
     /* border: 2px solid green; */
     font-size: 25px;
     height: 65vh;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
     color: black;
-    margin: auto;
 }
 .key{
     background-color: rgb(183, 216, 240);
