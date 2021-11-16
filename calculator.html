@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Calculator</title>
+    <title>Calculator</title>
 
     <link rel="stylesheet" href="claculator.css">
 
@@ -13,42 +13,42 @@
     <div class="container">
         <h1>Calculator</h1>
         <div class="calculator">
-            <div class="input-view">
-                <p id="input-view">Expression : <span>0</span> </p>
-                <p id="result-view">Answer: <span>0</span> </p>
+            <div class="view">
+                <p id="input-view"></p>
             </div>
-            <!-- <hr> -->
             <div class="input-key">
-                <div>
-                    <span class="key">1</span>
-                    <span class="key">2</span>
-                    <span class="key">3</span>
-                    <span class="key del">C</span>
-                    <span class="key clear">[x]</span>
+                <div class="a">
+                    <input type="button" class="key" value="1" onclick="click_key(1)">
+                    <input type="button" class="key" value="2" onclick="click_key(2)">
+                    <input type="button" class="key" value="3" onclick="click_key(3)">
+                    <input type="button" class="key del" value="C" onclick="clear_all()">
+                    <input type="button" class="key clear" value="[x]" onclick="back_slash()">
                 </div>
                 <div>
-                    <span class="key">4</span>
-                    <span class="key">5</span>
-                    <span class="key">6</span>
-                    <span class="key">+</span>
-                    <span class="key">-</span>
+                    <input type="button" class="key" value="4" onclick="click_key(4)">
+                    <input type="button" class="key" value="5" onclick="click_key(5)">
+                    <input type="button" class="key" value="6" onclick="click_key(6)">
+                    <input type="button" class="key operator" value="-" onclick="click_key('-')">
+                    <input type="button" class="key operator" value="+" onclick="click_key('+')">
                 </div>
                 <div>
-                    <span class="key">7</span>
-                    <span class="key">8</span>
-                    <span class="key">9</span>
-                    <span class="key">*</span>
-                    <span class="key">/</span>
+                    <input type="button" class="key" value="7"  onclick="click_key(7)">
+                    <input type="button" class="key" value="8"  onclick="click_key(8)">
+                    <input type="button" class="key" value="9"  onclick="click_key(9)">
+                    <input type="button" class="key operator" value="*"  onclick="click_key('*')">
+                    <input type="button" class="key operator" value="/"  onclick="click_key('/')">
                 </div>
                 <div>
-                    <span class="key">?</span>
-                    <span class="key">0</span>
-                    <span class="key">.</span>
-                    <span class="equalsto result" onclick="result()">=</span>
+                    <input type="button" class="key" value="?"  onclick="click_key('?')">
+                    <input type="button" class="key" value="0"  onclick="click_key(0)">
+                    <input type="button" class="key" value="."  onclick="click_key('.')">
+                    <input type="button" class="equalsto" value="=" onclick="result()">
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="calculator.js"></script>
 
 </body>
 </html>
